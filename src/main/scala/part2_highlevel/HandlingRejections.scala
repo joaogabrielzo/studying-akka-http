@@ -13,7 +13,7 @@ import scala.concurrent.duration._
 
 object HandlingRejections extends App {
     
-    implicit val system: ActorSystem = ActorSystem("marshalling-json")
+    implicit val system: ActorSystem = ActorSystem("handling-rejections")
     implicit val materializer: ActorMaterializer = ActorMaterializer()
     implicit val ec: ExecutionContextExecutor = system.dispatcher
     implicit val timeout: Timeout = Timeout(3 seconds)
